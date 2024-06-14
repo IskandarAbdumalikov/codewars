@@ -54,20 +54,18 @@ class Student extends Person {
 // let student = new Student("John Doe", 20);
 // console.log(student.introduce());
 
-function createLink (link){
-    let str = link.split('-')
-    if (link.startsWith("http://" || "https://")) {
-          `<a href="${link}">${link}</a> videolar"`;
-    }
-    if (link.includes("http://" || "https://")) {
-      `<a href="${link}">${link}</a> videolar"`;
-    }
-    return str
-    
+function createLink(link) {
+  let str = link.split("-");
+  if (link.startsWith("http://" || "https://")) {
+    `<a href="${link}">${link}</a> videolar"`;
+  }
+  if (link.includes("http://" || "https://")) {
+    `<a href="${link}">${link}</a> videolar"`;
+  }
+  return str;
 }
 
-
-// console.log( createLink("habarlar https://kun.uz/") );    
+// console.log( createLink("habarlar https://kun.uz/") );
 // // "habarlar <a href="https://kun.uz/">https://kun.uz/</a>""
 // console.log( createLink("http://youtube.com videolar") );
 // // "<a href="http://youtube.com">http://youtube.com</a> videolar"
@@ -75,28 +73,31 @@ function createLink (link){
 // // "linkhttps://kun.uz/"
 
 function allNines(x) {
-  if (x>4000) {
-    return x
+  if (x > 4000) {
+    return x;
   }
-  
+
   return 0n; // x is a bigint
 }
 
-
-
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-  if (fuelLeft*mpg===distanceToPump) {
-    return true
-  }else{
-    return false
+  if (fuelLeft * mpg === distanceToPump) {
+    return true;
+  } else {
+    return false;
   }
 };
 
-
 function testEven(n) {
-  if (n%2===0 || n === 0) {
-    return true
-  }else{
-    return false
+  if (n % 2 === 0 || n === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function squareDigits(num) {
+  for (let i = 0; i < num.length; i++) {
+    
   }
 }
